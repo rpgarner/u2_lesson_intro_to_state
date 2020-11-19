@@ -1,0 +1,21 @@
+.tasks {
+  padding: 1em;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  padding: 0.5em 1em;
+}
+
+button {
+  padding: 0.5em 1em;
+  background: #ffb74d;
+  cursor: pointer;
+  border-color: #ffb74d;
+}

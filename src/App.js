@@ -1,11 +1,9 @@
-import React from 'react';
-import './App.css';
-import Todolist from './Todolist';
+import React from 'react'
+import './styles/App.css'
+import Todolist from './components/TodoList'
 
 function App() {
-  return (
-    <Todolist tasks={[]}/>
-  );
+  return <Todolist />
 }
 
-export default App;
+export default App

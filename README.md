@@ -311,6 +311,6 @@ Implement the following features:
 
 - Create a new task utilizing the `Input` component. Hint: You may need another `useState`. The value of the input should be stored in this state. The `handleChange` function is there to help, **USE IT**.
 
-- I should be able to add the newly typed task to our `tasks` state, half of this has already been done for you. ;)
+- I should be able to add the newly typed task to our `tasks` state, half of this has already been done for you. 😉
 
 - I should be able to remove a task from the `tasks` state, `splice` may be useful here! More on [`Array.splice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) Hint: You may want to add a button to each task as you `map` through it.

@@ -297,7 +297,7 @@ Try clicking the add button in your browser!
 
 You should see `My Task` added to the list!
 
-The `manageTask` translates to:
+The `manageTask` function translates to:
 
 ```js
 this.setState({ tasks: [...this.state.tasks, 'My Task'] })

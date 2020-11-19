@@ -192,7 +192,7 @@ You'll notice we can directly access the `tasks` state via the `tasks` variable,
 
 - Refactor the `Tasks` component into a functional component. We won't need state.
 
-- Refactor the `Input` component into a functional component. We won't need state here.
+- Refactor the `Input` component into a functional component. We won't need state.
 
 Once completed, check your work. Do not move forward until instructed.
 

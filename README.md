@@ -8,6 +8,7 @@
 
 ## Getting Started
 
+- Fork and Clone
 - cd into this folder
 - open this project in your code editor of choice
 - npm install

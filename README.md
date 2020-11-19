@@ -148,7 +148,7 @@ Let's break this down:
 
 - We're setting both of these items equal to `useState` which is a function, _all hooks are functions..._ And initializing it with an empty array.
 
-By setting `useState` in this manner, we are essentially stating:
+By setting `useState` in this manner, we are stating:
 
 ```js
 this.state = {
@@ -156,7 +156,7 @@ this.state = {
 }
 ```
 
-The `useState` hook provides us with two things, a variable to access our state and a method in which to manipulate it. The `manageTasks` method is directly in control of the `tasks` state. `useState` accepts an argument that sets our initial state, in this case an empty array.
+The `useState` hook provides us with two things, a variable to access our state and a method to manipulate it. The `manageTasks` method is directly in control of the `tasks` state. `useState` accepts an argument that sets our initial state, in this case an empty array.
 
 Let's make one small modification... Let's add some items to our initial state and pass these `tasks` to our `Tasks` component:
 

@@ -322,3 +322,4 @@ In this lesson, we saw how by using functional components and utilizing `useStat
 ## Resources
 - [React Hooks](https://reactjs.org/docs/hooks-intro.html)
 - [Array Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+- [The Steelhanded Stingray](https://youtu.be/7ikcZfXiFRQ)

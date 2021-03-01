@@ -1,18 +1,22 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) React Classes to Hooks
+# React Classes to Hooks
 
-## Objective
+![Hook](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F68.media.tumblr.com%2F4abecc3bda7a596a142b27e0554fbeb1%2Ftumblr_oaued85JWK1vreqoxo6_r1_500.gif&f=1&nofb=1)
 
-- Build a todo list with react hooks
+## Overview
+In this lesson, we'll look at the differences between our old *class-based* components and the new fancy **Hooks** we just learned about! We'll see the difference between using the "useState" hook and how we used to use our class components.  We'll also build a simple ToDo List with Hooks!
+
+## Objectives
 - Learn the difference between `useState` and `class` components
 - Implement `useState` to build a todolist
 
 ## Getting Started
+- `Fork` and `Clone`
+- `cd` into this folder
+- `code .` and open in VSCode
+- `npm i` to get our dependencies installed
+- `npm start` to spin up our React App
 
-- Fork and Clone
-- cd into this folder
-- open this project in your code editor of choice
-- npm install
-- npm start
+![Bye](https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fmedia.giphy.com%2Fmedia%2FSvOrq4OA7TQTC%2Fgiphy.gif&f=1&nofb=1)
 
 ## Classes vs. Hooks
 
@@ -20,17 +24,17 @@ All components in our app are currently written using a class based declaration 
 
 Since 2019 React has encouraged developers to move towards a new declerative format for component definitions.
 
-This development methodology allows for functional componets, as opposed to our perviously used class based components.
+This development methodology allows for functional components, as opposed to our perviously used class based components.
 
 For more on functional components/React Hooks, and the new associated React APIs: [React Hooks](https://reactjs.org/docs/hooks-intro.html)
 
 Utilizing hooks helps us a developers to speed up development by writing less code.
 
-## Migrating To Hooks
+## Migrating to Hooks
 
 Let's browse through the files provided, you'll notice most of the files are using the `class` declaration. `Class` components make us write a lot of unecessary boilerplate code just to get started, luckily for us the React team has been hard at work and gave us the `hooks` library allowing us to use only functional components to build our apps.
 
-Open your `TodoList.js` file you'll see the following:
+Open your `TodoList.js` file and you'll see the following:
 
 ```jsx
 import React, { Component } from 'react'
@@ -108,6 +112,8 @@ const TodoList = () => {
 export default TodoList
 ```
 
+![Peter](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F31.media.tumblr.com%2F4dd9097369563409ff79a8c1a3fbaed1%2Ftumblr_na7pik5KuV1qjzijvo6_400.gif&f=1&nofb=1)
+
 Now you may be wondering how we can hold state here...
 
 Let me introduce you to the `useState` hook!
@@ -141,12 +147,9 @@ export default TodoList
 ```
 
 Let's break this down:
-
-- We're importing the `useState` hook from react, _( It's built into the newer versions of the React library )_
-
-- We're using some fancy code to gain access to two items, `tasks` and `manageTasks`, this is what's known as `Array Destructing`. More on that **[HERE](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)**
-
-- We're setting both of these items equal to `useState` which is a function, _all hooks are functions..._ And initializing it with an empty array.
+- We're importing the `useState` hook from react *( It's built into the newer versions of the React library )*
+- We're using some fancy code to gain access to two items, `tasks` and `manageTasks`. This is **[Array Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)**.
+- We're setting both of these items equal to `useState` which is a function *(all hooks are functions)* and initializing it with an empty array.
 
 By setting `useState` in this manner, we are stating:
 
@@ -156,7 +159,9 @@ this.state = {
 }
 ```
 
-The `useState` hook provides us with two things, a variable to access our state and a method to manipulate it. The `manageTasks` method is directly in control of the `tasks` state. `useState` accepts an argument that sets our initial state, in this case an empty array.
+The `useState` hook provides us with two things: 1) a variable to access our state and 2) a method to manipulate it. The `manageTasks` method is directly in control of the `tasks` state. `useState` accepts an argument that sets our initial state, in this case an empty array.
+
+![Smile](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FiPuYCSSb2pspa%2F200.gif&f=1&nofb=1)
 
 Let's make one small modification... Let's add some items to our initial state and pass these `tasks` to our `Tasks` component:
 
@@ -184,17 +189,13 @@ const TodoList = () => {
 export default TodoList
 ```
 
-You'll notice we can directly access the `tasks` state via the `tasks` variable, thats the beauty of `hooks`, less code more features! Be mindful, the downward data flow rule still applies, even with hooks!
+You'll notice we can directly access the `tasks` state via the `tasks` variable, thats the beauty of `hooks`: less code, more features! Be mindful, the downward data flow rule still applies, even with hooks!
 
----
+![Bangarang](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fimages%2F28e0a769ba0dd705c2e20444df10dff3%2Ftenor.gif%3Fitemid%3D3294382&f=1&nofb=1)
 
-### You Do **10mins**
-
+### You Do
 - Refactor the `Tasks` component into a functional component. We won't need state.
-
-- Refactor the `Input` component into a functional component. We won't need state.
-
-Once completed, check your work. Do not move forward until instructed.
+- Refactor the `Input` component into a functional component. We won't need state here either.
 
 ---
 
@@ -232,7 +233,6 @@ export default TodoList
 ```
 
 Let's pass these functions down to the correct components:
-
 - `handleChange` should go to the `Input` component.
 - `addTask` should go to the `Input` component.
 
@@ -305,12 +305,20 @@ this.setState({ tasks: [...this.state.tasks, 'My Task'] })
 
 It accepts an argument of what we want to set a specific state to, the `manageTasks` is bound specifically to the `tasks` state and is the only function that can directly control it!
 
+![Bravo](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F64.media.tumblr.com%2F5d5b7c004e5cff775da309ec580876b3%2Ftumblr_phwi528fPb1vlacsto1_500.gifv&f=1&nofb=1)
+
 ## You Do
 
 Implement the following features:
-
 - Create a new task utilizing the `Input` component. Hint: You may need another `useState`. The value of the input should be stored in this state. The `handleChange` function is there to help, **USE IT**.
-
 - I should be able to add the newly typed task to our `tasks` state, half of this has already been done for you. 😉
-
 - I should be able to remove a task from the `tasks` state, `splice` may be useful here! More on [`Array.splice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) Hint: You may want to add a button to each task as you `map` through it.
+
+![Lost Boys](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fbraindeadradio.com%2Fwp-content%2Fuploads%2F2012%2F04%2Fhook.gif&f=1&nofb=1)
+
+## Lesson Recap
+In this lesson, we saw how by using functional components and utilizing `useState` we could do more with less code! We learned how functional components are where it's at in today's React World and utilizing hooks can be an effective tool in writing clean and efficient React code.
+
+## Resources
+- [React Hooks](https://reactjs.org/docs/hooks-intro.html)
+- [Array Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)

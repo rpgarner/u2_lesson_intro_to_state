@@ -22,7 +22,7 @@ In this lesson, we'll look at the differences between our old *class-based* comp
 
 All components in our app are currently written using a class based declaration (example: `class Todolist extends Component`).
 
-Since 2019 React has encouraged developers to move towards a new declerative format for component definitions.
+Since 2019 React has encouraged developers to move towards a new declarative format for component definitions.
 
 This development methodology allows for functional components, as opposed to our perviously used class based components.
 

@@ -28,11 +28,11 @@ This development methodology allows for functional components, as opposed to our
 
 For more on functional components/React Hooks, and the new associated React APIs: [React Hooks](https://reactjs.org/docs/hooks-intro.html)
 
-Utilizing hooks helps us a developers to speed up development by writing less code.
+Utilizing hooks helps us as developers to speed up development by writing less code.
 
 ## Migrating to Hooks
 
-Let's browse through the files provided, you'll notice most of the files are using the `class` declaration. `Class` components make us write a lot of unecessary boilerplate code just to get started, luckily for us the React team has been hard at work and gave us the `hooks` library allowing us to use only functional components to build our apps.
+Let's browse through the files provided, you'll notice most of the files are using the `class` declaration. `Class` components make us write a lot of unecessary boilerplate code just to get started, lucky for us the dark overlords over at Facebook (React) have been hard at work and gave us the `hooks` library. This allows us to use only functional components to build our apps.  Don't be afraid! ...Of the hooks, anyway.
 
 Open your `TodoList.js` file and you'll see the following:
 
@@ -118,7 +118,7 @@ Now you may be wondering how we can hold state here...
 
 Let me introduce you to the `useState` hook!
 
-The `useState` hook is a declaritive way to manage state, each `useState` is in charge of managing it's own state! Let's see this in action. In order to utilize `useState`, we need to import it from react.
+The `useState` hook is a declarative way to manage state, each `useState` is in charge of managing it's own state! Let's see this in action. In order to utilize `useState`, we need to import it from react.
 
 Modify your `React` import statement in your `TodoList.js` to the following:
 

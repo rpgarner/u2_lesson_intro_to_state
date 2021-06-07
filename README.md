@@ -3,7 +3,7 @@
 ![Hook](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F68.media.tumblr.com%2F4abecc3bda7a596a142b27e0554fbeb1%2Ftumblr_oaued85JWK1vreqoxo6_r1_500.gif&f=1&nofb=1)
 
 ## Overview
-In this lesson, we'll look at the differences between our old *class-based* components and the new fancy **Hooks** we just learned about! We'll see the difference between using the "useState" hook and how we used to use our class components.  We'll also build a simple ToDo List with Hooks!
+In this lesson, we'll look at the differences between our old *class-based* components and the new fancy **Hooks** we just learned about! We'll see the difference between using the "useState" hook and how we used to use our class components.  We'll also build a simple ToDo List with Hooks! Bangarang!
 
 ## Objectives
 - Learn the difference between `useState` and `class` components

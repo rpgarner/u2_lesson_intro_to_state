@@ -123,13 +123,13 @@ The `useState` hook is a declarative way to manage state, each `useState` is in 
 Modify your `React` import statement in your `TodoList.js` to the following:
 
 ```jsx
-import React, { useState } from 'React'
+import React, { useState } from 'react'
 ```
 
 Next let's set up some state:
 
 ```jsx
-import React, { useState } from 'React'
+import React, { useState } from 'react'
 import Tasks from './Tasks'
 import Input from './Input'
 
@@ -166,7 +166,7 @@ The `useState` hook provides us with two things: 1) a variable to access our sta
 Let's make one small modification... Let's add some items to our initial state and pass these `tasks` to our `Tasks` component:
 
 ```js
-import React, { useState } from 'React'
+import React, { useState } from 'react'
 import Tasks from './Tasks'
 import Input from './Input'
 
@@ -205,7 +205,7 @@ Now that our components are all set up properly, let's add some items to our `ta
 Start by creating two functions in your `TodoList` component:
 
 ```js
-import React, { useState } from 'React'
+import React, { useState } from 'react'
 import Tasks from './Tasks'
 import Input from './Input'
 

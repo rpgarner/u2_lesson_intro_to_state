@@ -1,9 +1,9 @@
 import React from 'react'
 import './styles/App.css'
-import Todolist from './components/TodoList'
+import TodoList from './components/TodoList'
 
-function App() {
-  return <Todolist />
+const App = () => {
+  return <TodoList />
 }
 
 export default App

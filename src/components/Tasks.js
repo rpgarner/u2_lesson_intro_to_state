@@ -1,19 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class Tasks extends Component {
-  constructor(props) {
-    super(props)
-  }
+const Tasks = () => {
 
-  render() {
-    return (
-      <ul>
-        {this.props.tasks.map((task, index) => (
-          <li key={index}>{task}</li>
-        ))}
-      </ul>
-    )
-  }
+  return (
+    <ul>
+      {props.tasks.map((task, index) => (
+        <li key={index}>{task}</li>
+      ))}
+    </ul>
+  )
 }
 
 export default Tasks

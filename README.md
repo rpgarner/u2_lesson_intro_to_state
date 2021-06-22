@@ -1,4 +1,4 @@
-# React Hooks: useState
+# Intro to State in React & React Hooks: useState
 
 ![Hook](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F68.media.tumblr.com%2F4abecc3bda7a596a142b27e0554fbeb1%2Ftumblr_oaued85JWK1vreqoxo6_r1_500.gif&f=1&nofb=1)
 
@@ -106,7 +106,9 @@ In many ways State and Props operate similarly.  Both are plain JS Objects that 
 ### Props Are Owned by any Parent Component, State is Owned (generally) by the App Component
 
 - When we refer to Props, we're referring to the JSX "attributes" (properties) that have been passed down from a parent component. Like this:
-  `<Movie title={"Blade Runner 2049"} year={2017} />`
+
+  `<Movie title={"Blade Runner"} year={1982} />`
+
 - State is declared within a component.
 
 ### Props Are Immutable, State is Not
@@ -159,7 +161,7 @@ You'll notice we can directly access the `tasks` state via the `tasks` variable.
 
 ## Setting State
 
-Now that our components are all set up properly, let's add some items to our `tasks` state.
+Let's add some items to our `tasks` state.
 Start by creating two functions in your `TodoList` component:
 
 ```js
@@ -240,7 +242,9 @@ In your `Input.js` wire the `addTask` function to the button provided:
 
 ```jsx
 import React from 'react'
+
 const Input = (props) => {
+  
   return (
     <div className="tasks">
       <label>Input Task: </label>

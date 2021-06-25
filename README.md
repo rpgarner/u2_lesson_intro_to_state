@@ -103,7 +103,7 @@ The `useState` hook provides us with two things: 1) a variable to access our sta
 
 In many ways State and Props operate similarly.  Both are plain JS Objects that hold data about your application and both of them trigger a render when they are updated.  However, there are some important differences between the two.
 
-### Props Are Owned by any Parent Component, State is Owned (generally) by the App Component
+### Props are passed to child components from the parent component. State can be stored anywhere in your application, however it can only be passed in one direction, **down**.
 
 - When we refer to Props, we're referring to the JSX "attributes" (properties) that have been passed down from a parent component. Like this:
 

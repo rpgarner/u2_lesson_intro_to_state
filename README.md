@@ -120,8 +120,9 @@ In many ways State and Props operate similarly.  Both are plain JS Objects that 
 
 - We will often pass parts of a component's state down to child components.  The child gains the value in its own `props`
 - Child components cannot pass state up to a parent (Remember Unidirectional Data Flow)
+- Only down the component tree... like this...
 
-![unidirectional](https://gamepedia.cursecdn.com/minecraft_gamepedia/thumb/f/ff/WaterSpread.gif/270px-WaterSpread.gif?version=cef0577943898a09a30d9033018d9b35)
+![Cannonball](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.tenor.co%2Fimages%2Fad40b517ae9388840a43e4f7ab493bff%2Fraw&f=1&nofb=1)
 ___
 
 ## Back to Our ToDo List
